@@ -1,0 +1,20 @@
+.page-container {
+  background: #f9f9f9;
+  padding: 20px;
+  min-height: calc(100vh - 70px);
+  border-radius: 8px;
+}
+
+.page-container h1 {
+  color: pink;
+  margin-bottom: 15px;
+}
+
+.page-container ul {
+  padding-left: 20px;
+}
+
+.page-container li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}

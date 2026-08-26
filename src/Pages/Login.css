@@ -1,0 +1,144 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  /* Background Image with dark transparent overlay */
+  background: linear-gradient(rgba(15, 15, 20, 0.36), rgba(15, 15, 20, 0.36)),
+  url('../../public/images/login1.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.login-box {
+  display: flex;
+  background: rgba(17, 17, 17, 0.8); /* Slightly transparent */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  padding: 40px 36px;
+  min-width: 350px;
+  max-width: 420px;
+  color: #fff;
+
+  /* Optional glass effect */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input[type="email"],
+input[type="password"] {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border-color: #fca311; /* Amber/orange border color */
+  box-shadow: 0 0 4px 2px #fca311;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #fca311;
+  box-shadow: 0 0 12px 3px #fca311;
+}
+/* Error message styling */
+.error-message {
+  color: #ffb703;
+  background: #262626;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 1px 7px rgba(255, 183, 3, 0.45);
+}
+
+.login-left img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-right {
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-right input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: orange;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+.link {
+  color: orange;
+  cursor: pointer;
+}
+.login-welcome-bold {
+  font-weight: bold;
+  font-size: 45px;  /* larger than Login heading */
+  margin-bottom: 2px;
+  color: orange;
+  text-align: center;
+  /* color: #ffffff; */
+}
+
+.login-right h2 {
+  font-weight: bold;
+  font-size: 28px;  /* smaller than welcome text */
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+.create-acc {
+  font-weight: bold;
+  font-size: 28px;  /* smaller than welcome text */
+  margin-bottom: 20px;
+  color: orange;
+  text-align: center;
+}
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  vertical-align: middle;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.forgot-password-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+

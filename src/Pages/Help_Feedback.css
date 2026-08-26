@@ -1,0 +1,134 @@
+:root {
+  --primary-orange: #ff8000;
+  --orange-hover: #ffad4c;
+  --peach-gradient: linear-gradient(90deg, #fff8f3 0%, #ffe3c2 100%);
+  --light-gray: #faf8f7;
+  --dark-gray: #323232;
+  --box-shadow: 0 2px 16px rgba(70,70,70,0.08);
+  --font-main: 'Inter', 'Segoe UI', Arial, sans-serif;
+  --border-radius: 18px;
+}
+
+.fb-bg {
+  background: var(--peach-gradient);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  font-family: var(--font-main);
+}
+
+.fb-card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 24px;
+  max-width: 480px;
+  width: 100%;
+}
+
+.fb-heading {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: var(--primary-orange);
+  text-align: center;
+}
+
+.fb-question {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--dark-gray);
+}
+
+/* Upgraded rating stars */
+.fb-stars {
+  margin-bottom: 12px;
+  user-select: none;
+  display: flex;
+  gap: 10px;
+}
+
+.fb-star {
+  font-size: 36px;
+  cursor: pointer;
+  color: gray;
+  transition: color 0.2s ease, transform 0.2s ease;
+  user-select: none;
+  text-shadow: none;
+}
+
+.fb-star.filled {
+  color: var(--primary-orange);
+  transform: scale(1.2);
+  text-shadow: 0 0 5px var(--orange-hover);
+}
+
+.fb-star:hover,
+.fb-star.hovered {
+  color: var(--orange-hover);
+  transform: scale(1.3);
+  text-shadow: 0 0 10px var(--orange-hover);
+}
+
+.fb-subtext {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--dark-gray);
+}
+
+.fb-textarea {
+  width: 100%;
+  resize: vertical;
+  font-family: var(--font-main);
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1.5px solid var(--light-gray);
+  color: var(--dark-gray);
+  transition: border-color 0.15s ease;
+  margin-bottom: 12px;
+}
+
+.fb-textarea:focus {
+  outline: none;
+  border-color: var(--primary-orange);
+}
+
+.fb-submit {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary-orange);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.fb-submit:hover {
+  background: var(--orange-hover);
+}
+
+.fb-help-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--primary-orange);
+  font-weight: 700;
+  background: transparent;
+  color: var(--primary-orange);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.fb-help-btn:hover {
+  background: var(--primary-orange);
+  color: white;
+}

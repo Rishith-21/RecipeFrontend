@@ -1,0 +1,120 @@
+:root {
+  --primary-orange: #ff8000;
+  --orange-hover: #ffad4c;
+  --peach-bg: #fff8f3;
+  --peach-gradient: linear-gradient(90deg, #fff8f3 0%, #ffe3c2 100%);
+  --nav-active-bg: #ffe4c2;
+  --light-gray: #faf8f7;
+  --dark-gray: #323232;
+  --box-shadow: 0 2px 16px rgba(70,70,70,0.08);
+  --font-main: 'Inter', 'Segoe UI', Arial, sans-serif;
+  --border-radius: 18px;
+}
+
+.subscription-page {
+  max-width: 900px;
+  margin: 40px auto;
+  background: var(--peach-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 32px 30px;
+  font-family: var(--font-main);
+}
+
+.subscription-page h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--dark-gray);
+  margin-bottom: 4px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.subscription-page p {
+  color: #7a7a7a;
+  font-size: 1.07rem;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.subscription-table-container {
+  margin-bottom: 25px;
+}
+
+.subscription-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 1px 5px rgba(34,34,34,0.04);
+  overflow: hidden;
+  font-size: 1.12rem;
+}
+
+.subscription-table th,
+.subscription-table td {
+  padding: 18px 22px;
+  text-align: center;
+  border-bottom: 1px solid #f3e2c7;
+}
+
+.subscription-table th {
+  background: #fff4e7;
+  color: var(--dark-gray);
+  font-weight: 700;
+  font-size: 1.11rem;
+}
+
+.subscription-table td:first-child, .subscription-table th:first-child {
+  text-align: left;
+}
+
+.subscription-table tr:last-child td {
+  border-bottom: none;
+}
+
+.subscribe-btn {
+  background: var(--primary-orange);
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  padding: 14px 0;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.subscribe-btn:hover:not(:disabled) {
+  background: var(--orange-hover);
+}
+.subscribe-btn:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+  color: #999;
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 900;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 380px;
+  background: white;
+  border-radius: 16px;
+  padding: 32px 30px;
+  box-shadow: 0 12px 24px rgba(70, 70, 70, 0.15);
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  font-family: var(--font-main);
+  text-align: center;
+}
